@@ -11,7 +11,7 @@
 	 </head>
  
  <body>
-		 <Form class="form-horizontal" action="../php/grohssack.php" >
+		 <Form class="form-horizontal col-xs-4" action="../php/grohssack.php" >
 			<div class="form-group">
 				<label for="area" class="control-label col-sm-6"> Fläche je in Stockwerk in qm:</label>
 				<div class="col-sm-6">
@@ -33,19 +33,44 @@
 				</div>
 			</div>
 			 <!-- radio buttons-->
-			</br>
-			 vor 1950<input type="radio" id="age1" value="1" name="age"></input>
-			</br>
-			 vor 1977<input type="radio" id="age2" value="2" name="age"></input>
-			</br>
-			 vor 1987<input type="radio" id="age3" value="3" name="age"></input>
-			</br>
-			 vor 1998<input type="radio" id="age4" value="4" name="age"></input>
-			</br>
-			 vor 2002<input type="radio" id="age5" value="5" name="age"></input>
-			</br>
-			 vor 2009<input type="radio" id="age6" value="6" name="age"></input>
-			 <input type="submit"></input>
+			 <div class="form-group">
+				<label for="floors" class="control-label col-sm-6">vor 1950</label>
+				<div class="col-sm-6 radio">
+					<input type="radio" id="age1" value="1" name="age"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="floors" class="control-label col-sm-6">vor 1977</label>
+				<div class="col-sm-6 radio">
+					<input type="radio" id="age2" value="2" name="age"></input>
+				</div>
+			</div>
+			 <div class="form-group">
+				<label for="floors" class="control-label col-sm-6">vor 1987</label>
+				<div class="col-sm-6 radio">
+					<input type="radio" id="age3" value="3" name="age"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="floors" class="control-label col-sm-6">vor 1998</label>
+				<div class="col-sm-6 radio">
+					<input type="radio" id="age4" value="4" name="age"></input>
+				</div>
+			</div>
+			 <div class="form-group">
+				<label for="floors" class="control-label col-sm-6">vor 2009</label>
+				<div class="col-sm-6 radio">
+					<input type="radio" id="age5" value="5" name="age"></input>
+				</div>
+			</div>
+			<div class="form-inline">
+				<div class="col-sm-offset-3 inline col-sm-2">
+					<input type="reset" class="btn btn-default"></input>
+				</div>
+				<div class="col-sm-offset-1 col-sm-2">
+					<input type="submit" class="btn btn-default"></input>
+				</div>
+			<div>
 		</form>
  
  </body>
