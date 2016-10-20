@@ -3,16 +3,35 @@
 	 <head>
 		 <title>Kostenabschaltung</title>
 		 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		 <link rel="stylesheet" href="style.css" type="text/css" />
+		 <!-- Das neueste kompilierte und minimierte CSS -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<!-- Das neueste kompilierte und minimierte JavaScript -->
+		<script language="javascript" type="text/javascript" src="./bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 	 </head>
  
  <body>
-		 <Form action="../php/grohssack.php">
-			 Fläche je in Stockwerk in qm:<input name="area" id="area" type="text"></input>
-			</br>
-			 Stockwerkshöhe in m:<input name="height" id="height" type="text"></input>
-			</br>
-			 Anzahl Stockwerke:<input></input>
+		 <Form class="form-horizontal" action="../php/grohssack.php" >
+			<div class="form-group">
+				<label for="area" class="control-label col-sm-6"> Fläche je in Stockwerk in qm:</label>
+				<div class="col-sm-6">
+					<input name="area" class="form-control" id="area" type="number"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				
+				<label for="height" class="control-label col-sm-6"> Stockwerkshöhe in m:</label>
+				<div class="col-sm-6">
+					<input name="height" class="form-control" id="height" type="number"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				
+				<label for="floors" class="control-label col-sm-6"> Anzahl Stockwerke:</label>
+				<div class="col-sm-6">
+					<input name="floors" class="form-control" id="floors" type="number"></input>
+				</div>
+			</div>
 			 <!-- radio buttons-->
 			</br>
 			 vor 1950<input type="radio" id="age1" value="1" name="age"></input>
